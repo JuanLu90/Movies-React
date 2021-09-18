@@ -1,0 +1,15 @@
+.card {
+    margin: 0 20px;
+}
+.card .cardInfo {
+    padding: 5px 15px;
+}
+.card .cardInfo .cardTitle {
+    display: block;
+    width: 220px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.25rem;
+    font-weight: 700;
+}

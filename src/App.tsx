@@ -10,7 +10,9 @@ const App: React.FC = () => {
     let apiUrl = 'https://api.themoviedb.org/3/';
     let apiKey = '?api_key=f1eb0fddb91524fcb1e67860576e0d66&';
 
-    const fetchUrl = `${apiUrl}discover/movie${apiKey}primary_release_date.gte=2019-06-04&primary_release_date.lte=2019-07-04&apiKey&`;
+    const fetchUrl = `${apiUrl}discover/movie${apiKey}`;
+    // details movie
+    // https://api.themoviedb.org/3/movie/848278?api_key=f1eb0fddb91524fcb1e67860576e0d66&language=en-US
 
     const fetchMovies = async () => {
       try {
