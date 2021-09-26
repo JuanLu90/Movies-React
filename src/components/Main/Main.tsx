@@ -1,22 +1,22 @@
-import react from 'react';
 import MoviesList from '../MoviesList/MoviesList';
 
 import './Main.css';
 
 interface Main {
-  info?: {
+  info: {
       page: number,
       results: Array<{}>,
       total_pages: number,
       total_results: number
   };
+  setInfo: any;
 };
 
-const Main: React.FC<Main> = ({info}) => {
+const Main: React.FC<Main> = ({info, setInfo}) => {
 
   return (
     <div className="main">
-      <MoviesList info={info} />
+      <MoviesList info={info} setInfo={setInfo} />
     </div>
   );
 }

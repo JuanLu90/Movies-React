@@ -1,4 +1,3 @@
-import react from 'react';
 import './Card.css';
 
 interface Movie {
@@ -19,6 +18,7 @@ const Card: React.FC<Movie> = ({movie, key}) => {
     <div className="card" key={key}>
       <div className="imageContainer">
           <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt="" />
+          <div className="details"> <button onClick={() => console.log(movie.title)}>Details</button> </div>
       </div>
       <div className="cardInfo">
         <span className="cardTitle" title={movie.title}>{movie.title} </span>
@@ -26,6 +26,7 @@ const Card: React.FC<Movie> = ({movie, key}) => {
         <span className="cardDate">{movie.release_date}</span>
       </div>
       <span className="cardVote">{movie.vote_average}</span>
+      
     </div>
   );
 }

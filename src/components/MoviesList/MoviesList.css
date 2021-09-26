@@ -1,3 +1,7 @@
+.moviesList {
+    margin-bottom: 15px;
+}
+
 .moviesListCards {
     display: flex;
     flex-wrap: wrap;
