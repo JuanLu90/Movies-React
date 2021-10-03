@@ -1,0 +1,114 @@
+.movieDetails {
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+    margin: 15px 25px;
+    box-shadow: 0 0 5px 3px lightgrey;
+    border-radius: 7px;
+}
+.movieDetails > img {
+    width: 100%;
+    filter: brightness(0.5);
+}
+
+.movieDetails .movieInfo {
+    display: grid;
+    grid-template-columns: 250px auto;
+    padding: 25px;
+}
+.movieDetails .movieInfo > img {
+    position: absolute;
+    width: 200px;
+    top: 130px;
+    left: 40px;
+    border-radius: 10px;
+}
+
+.movieDetails .movieInfo .leftInfo {
+    padding: 100px 0 0 16px;
+}
+.movieDetails .movieInfo .leftInfo > span {
+    display: block;
+    font-size: 0.9rem;
+    color: grey ;
+}
+
+.movieDetails .movieInfo .leftInfo > div {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.movieDetails .movieInfo .leftInfo > div .genres {
+    margin: 2px;
+    padding: 3px 7px;
+    background-color: #000000;
+    color: white;
+    font-size: 0.8em;
+    border-radius: 5px;
+}
+.movieDetails .movieInfo .rightInfo p {
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 0;
+    font-weight: 500;
+}
+.movieDetails .movieInfo .rightInfo > span {
+    display: block;
+    font-size: 0.9em;
+    color: grey;
+}
+.movieDetails > span {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 1.75em;
+    filter: invert(1);
+    cursor: pointer;
+}
+.movieDetails .imageInfo {
+    height: 320px;
+}
+.movieDetails .imageInfo > img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.5);
+    border-radius: 7px 7px 0 0;
+}
+.movieDetails .imageInfo > div {
+    position: absolute;
+    top: 125px;
+    left: 275px;
+    padding-right: 30px;
+    color: white;
+}
+.movieDetails .imageInfo > div > div {
+    margin-top: 10px;
+}
+.movieDetails .imageInfo > div > div .starOff {
+    opacity: 0.35;
+}
+.movieDetails .imageInfo > div > span {
+    display: block;
+}
+.movieDetails .imageInfo > div .title {
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 30px;
+}
+.movieDetails .imageInfo > div .rating {
+    display: grid;
+    grid-template-columns: 55px auto;
+}
+
+.movieDetails .imageInfo > div .rating > span {
+    margin-top: 2px;
+}
+
+.movieDetails .imageInfo > div .rating > div > div {
+    margin: 2px 0 0 7px;
+    font-size: 0.8em;
+}

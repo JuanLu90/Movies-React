@@ -1,9 +1,17 @@
 .moviesList {
     margin-bottom: 15px;
 }
+.moviesList h1 {
+    margin-left: 50px;
+}
 
 .moviesListCards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.movieListMovieSelected {
+    display: grid;
+    grid-template-columns: auto 650px;
 }
