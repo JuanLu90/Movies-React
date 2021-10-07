@@ -1,74 +1,74 @@
 .card {
-    position: relative;
-    margin: 15px 20px;
-    box-shadow: 0 0 10px 5px lightgrey;
-    border-radius: 7px;
-    overflow: hidden;
+  position: relative;
+  margin: 15px 20px;
+  box-shadow: 0 0 10px 5px lightgrey;
+  border-radius: 7px;
+  overflow: hidden;
 }
 .card:hover {
-    box-shadow: 0 0 10px 17px lightgrey;
-    transition: 0.4s ease;
+  box-shadow: 0 0 10px 17px lightgrey;
+  transition: 0.4s ease;
 }
 .card:hover::before {
-    opacity: 1
+  opacity: 1;
 }
 .card .details {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    height: 0;
-    z-index: 3;
-    color: white;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: 0.5s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 0;
+  z-index: 3;
+  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s;
 }
 .card .imageContainer:hover .details {
-    opacity: 1;
-    transform: translateY(-210px);
+  opacity: 1;
+  transform: translateY(-210px);
 }
 .card .details button {
-    height: fit-content;
-    padding: 0.6rem;
-    outline: none;
-    border: none;
-    border-radius: 3px;
-    background: white;
-    color: black;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.4s ease;
+  height: fit-content;
+  padding: 0.6rem;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease;
 }
 .card .imageContainer {
-    width: 250px;
-    height: 375px
+  width: 250px;
+  height: 375px;
 }
 .card .imageContainer img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 .card .cardInfo {
-    display: flex;
-    justify-content:space-around;
-    flex-direction: column;
-    height: 55px;
-    padding: 10px 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 55px;
+  padding: 10px 15px;
 }
 .card .cardInfo .cardTitle {
-    width: 220px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 1.25rem;
-    font-weight: 700;
+  width: 220px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 .card .cardVote {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background-color: yellow;
-    padding: 5px 10px;
-    border-radius: 10px;
-    font-size: 1.1rem;
-    font-weight: 700;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: yellow;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
 }
